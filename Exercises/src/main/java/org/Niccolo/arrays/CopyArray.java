@@ -1,4 +1,4 @@
-package org.Niccolo.Arrays;
+package org.Niccolo.arrays;
 
 /*
 Write a method accepting a double[] and returning a copy of the initial double[] (see System.arraycopy()).

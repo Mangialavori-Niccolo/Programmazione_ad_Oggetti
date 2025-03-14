@@ -1,4 +1,4 @@
-package org.Niccolo.Arrays;
+package org.Niccolo.arrays;
 
 import java.util.Arrays;
 import java.util.random.RandomGenerator;

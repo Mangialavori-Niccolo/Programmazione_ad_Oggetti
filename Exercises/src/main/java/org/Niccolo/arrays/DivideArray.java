@@ -1,4 +1,4 @@
-package org.Niccolo.Arrays;
+package org.Niccolo.arrays;
 
 /*
  Write a method accepting a double[] and a double value returning a different double[] representing the original

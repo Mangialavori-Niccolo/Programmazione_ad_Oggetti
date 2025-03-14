@@ -1,4 +1,4 @@
-package org.Niccolo.Arrays;
+package org.Niccolo.arrays;
 
 /*
 Write a method accepting two double[] returning a different double[] representing the first array divided by the
