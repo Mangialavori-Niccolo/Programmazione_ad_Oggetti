@@ -27,6 +27,7 @@ public class BubbleSort {
         v[j] = tmp;
     }
 
+
     public static void bubbleSort(int[] v) {
         boolean change = true;
 
@@ -42,7 +43,6 @@ public class BubbleSort {
     }
 
     public static int[] bubbleSortCopy(int[] v) {
-        boolean change = true;
         int[] cpy = new int[v.length];
         System.arraycopy(v, 0, cpy, 0, v.length);
 
