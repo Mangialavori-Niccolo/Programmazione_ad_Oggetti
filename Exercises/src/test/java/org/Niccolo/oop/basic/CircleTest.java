@@ -8,7 +8,7 @@ import java.awt.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
-       public static final double DELTA = 1e-06;
+    public static final double DELTA = 1e-06;
     Circle circle;
 
     @BeforeEach
@@ -62,4 +62,5 @@ class CircleTest {
     void testToString(){
         assertEquals("Circle{center=java.awt.Point[x=5,y=5], radius=10}", circle.toString());
     }
+
 }

@@ -55,8 +55,9 @@ public class RationalNumber {
         return Objects.hash(numerator, denominator);
     }
 
+    @Override
     public String toString(){
-        return "RationalNumber = {num: %d, den: %d}".formatted(numerator, denominator);
+        return "RationalNumber{numerator=" + numerator + ", denominator=" + denominator + "}";
     }
 
     //Funzioni utili prefatte
