@@ -1,25 +1,21 @@
 package org.Niccolo.collections;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class CheckAnagrams {
     public static boolean areAnagrams(String first, String second){
-        Map<Integer, Character> map = new HashMap<>();
-        char[] vett = first.toCharArray();
-        for(int i = 0; i < vett.length; i++){
-            map.put(i, Character.toLowerCase(vett[i]));
-        }
+        Map<Character, Integer> map1 = stringToMap(first);
+        Map<Character, Integer> map2 = stringToMap(second);
+        return map1.equals(map2);
+    }
 
-        boolean anagrams = true;
-        for(char c : second.toCharArray()){
-            if(!map.containsValue(Character.toLowerCase(c))){
-                anagrams = false;
-            }
+    private static Map<Character, Integer> stringToMap (String string){
+        Map<Character, Integer> map = new HashMap<>();
+        for(Character c : string.toLowerCase().toCharArray()){
+            int numOcc = map.getOrDefault(c, 0);
+            map.put(c, numOcc + 1);
         }
-
-        return anagrams;
+        return map;
     }
 }
